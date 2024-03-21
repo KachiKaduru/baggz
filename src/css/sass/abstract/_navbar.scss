@@ -1,0 +1,43 @@
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 20;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6.9rem;
+    padding: 1.8rem;
+    box-shadow: 0 0.4rem 0.8rem black;
+  }
+
+  .img-div {
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    place-content: center;
+    position: relative;
+  }
+
+  .clicked-nav {
+    border-bottom: 2px solid black;
+  }
+
+  .cart-count {
+    position: absolute;
+    top: -1rem;
+    right: -0.7rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.6rem;
+    background: $black;
+    color: $white;
+    border-radius: 50%;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Work Sans", serif;
+    border: 1px solid #fff;
+  }
+}

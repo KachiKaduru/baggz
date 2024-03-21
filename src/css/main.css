@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Playfair Display", serif;
+}
+
+.app {
+  position: relative;
+}
+
+.container {
+  max-width: 37.5rem;
+  margin: auto;
+  padding: 1.2rem;
+  font-family: "Playfair Display", serif;
+  background-color: #fff;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+header .logo img {
+  width: 2.4rem;
+  height: 1.4rem;
+}
+header .logo h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+header .user-dp {
+  border-radius: 50%;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: pink;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 20;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6.9rem;
+  padding: 1.8rem;
+  box-shadow: 0 0.4rem 0.8rem black;
+}
+.navbar .img-div {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+.navbar .clicked-nav {
+  border-bottom: 2px solid black;
+}
+.navbar .cart-count {
+  position: absolute;
+  top: -1rem;
+  right: -0.7rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.6rem;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 50%;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Work Sans", serif;
+  border: 1px solid #fff;
+}
+
+.homepage .container {
+  display: grid;
+  gap: 2.4rem;
+}
+.homepage main {
+  background: url(/src/images/hero-1.png);
+  width: 100%;
+  height: 19.5rem;
+  display: grid;
+}
+.homepage main h3 {
+  align-self: center;
+  justify-self: self-end;
+  margin: 0 1.2rem 0 0;
+  width: 24%;
+}
+.homepage main h3 span {
+  background: #ffffff;
+  padding: 0.1rem 0.5rem;
+}
+.homepage .bags-comp-stn {
+  margin: 1.6rem 0 0;
+  padding: 0 0 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.3rem 2.4rem;
+}
+.homepage .bag-item {
+  background: #f1f1f1;
+  padding: 0.6rem 0 1.8rem;
+  position: relative;
+  display: grid;
+  cursor: pointer;
+}
+.homepage .bag-item .imgs-div {
+  width: 11.1rem;
+  height: 11.1rem;
+  margin: auto;
+}
+.homepage .bag-item .imgs-div img {
+  width: 100%;
+  height: 100%;
+}
+.homepage .bag-item h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 1.1rem 0 1.8rem;
+}
+.homepage .bag-item button {
+  background: none;
+  font-family: "Work Sans", serif;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-bottom: 0.2rem solid #000000;
+  padding: 0 0 0.3rem;
+  width: 8.5rem;
+  margin: auto;
+}
+.homepage .bag-item .wishlist-btn {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.9rem;
+  cursor: pointer;
+  width: 1.7rem;
+}
+.homepage .bag-item .liked {
+  background: red;
+}
+.homepage .bag-item .liked img {
+  background: #fff;
+  mix-blend-mode: screen;
+  filter: invert(1);
+}
+
+.prod-desc .container {
+  display: grid;
+  gap: 3rem;
+}
+.prod-desc .exit-bar {
+  padding: 0.1rem;
+}
+.prod-desc .exit-bar button {
+  width: 3rem;
+  height: 3rem;
+  background: rgba(128, 128, 128, 0.127);
+  background: none;
+}
+.prod-desc .exit-bar button img {
+  width: 100%;
+  height: 100%;
+  filter: contrast(100);
+}
+.prod-desc .disp-prod {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2rem;
+}
+.prod-desc .disp-prod .prod-img {
+  height: 15.5rem;
+  width: 100%;
+}
+.prod-desc .disp-prod .prod-img img {
+  height: 100%;
+}
+.prod-desc .disp-prod .prod-details {
+  font-family: "Work Sans", serif;
+  display: grid;
+  gap: 1.5rem;
+}
+.prod-desc .disp-prod .prod-details h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  font-family: "Playfair Display", serif;
+}
+.prod-desc .disp-prod .prod-details h4 {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.prod-desc .disp-prod .prod-details h4 p {
+  padding: 0.2rem 0 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #848484;
+}
+.prod-desc .disp-prod .prod-details h3 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.prod-desc .disp-prod .prod-details button {
+  text-transform: uppercase;
+  font-family: "Work Sans", serif;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.prod-desc .disp-prod .prod-details .buy-btn {
+  background: #000000;
+  color: #ffffff;
+  padding: 0.7rem 1.3rem;
+}
+.prod-desc .disp-prod .prod-details .added {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.prod-desc .disp-prod .prod-details .add-btn {
+  color: #000000;
+  border-bottom: 0.2rem solid #000000;
+  background: none;
+  padding: 0.1rem;
+  cursor: pointer;
+}
+.prod-desc .prod-info {
+  font-family: "Work Sans", serif;
+  display: grid;
+  gap: 2.5rem;
+}
+.prod-desc .prod-info .info-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.prod-desc .prod-info .info-bar .heading {
+  font-weight: 700;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.prod-desc .prod-info .info-bar .current-bar {
+  border-bottom: 2px solid #000000;
+  padding: 0 0 0.5rem;
+}
+.prod-desc .prod-info .info-stn {
+  color: #5b5b5b;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+.prod-desc .prod-info .info-stn h4 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #000000;
+  padding: 0.5rem 0;
+}
+.prod-desc .prod-info .info-stn p {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wc-comp-stn {
+  position: fixed;
+  bottom: 5rem;
+  width: 100%;
+  translate: 0% 100%;
+  transition: all 0.3s;
+  z-index: 10;
+}
+.wc-comp-stn .container {
+  background: none;
+  height: 60vh;
+  padding-top: 0;
+}
+
+.show {
+  translate: 0% 0%;
+  transition: all 0.3s;
+}
+
+.bar {
+  width: 100%;
+  padding: 1rem 0 6rem;
+  background: none;
+  position: sticky;
+  top: 0;
+}
+.bar .bar-2 {
+  width: 14rem;
+  height: 0.3rem;
+  margin: auto;
+  background-color: #000000;
+}
+
+.empty {
+  text-align: center;
+  line-height: 2.8rem;
+}
+
+.wishlist-stn,
+.cart-stn {
+  height: 100%;
+  padding: 0 2.2rem 2.2rem;
+  border-radius: 4rem 4rem 0 0;
+  border: 1px solid rgba(217, 217, 217, 0.7);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.pack {
+  height: 100%;
+  overflow-y: scroll;
+  padding-bottom: 6rem;
+}
+
+.item-component {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3rem;
+  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.3921568627);
+  padding: 2.1rem 0;
+}
+.item-component .left .img-holder {
+  width: 8.1rem;
+  height: 8.1rem;
+  margin-bottom: 1rem;
+}
+.item-component .left .img-holder img {
+  width: 100%;
+  height: 100%;
+}
+.item-component .left .amount {
+  background-color: fuchsia;
+  display: flex;
+}
+.item-component .left .amount button {
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 0.58rem 1.16rem;
+  color: #ffffff;
+  background: #000000;
+}
+.item-component .left .amount input {
+  width: 3.2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #000000;
+  background: #ffffff;
+  border: 0.72px solid black;
+}
+.item-component .right {
+  display: grid;
+  font-family: "Work Sans", serif;
+}
+.item-component .right h2 {
+  font-family: "Playfair Display", serif;
+}
+.item-component .right h4 {
+  margin: 0.5rem 0 1.4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+.item-component .right h4 p {
+  font-size: 1.2rem;
+  color: #848484;
+}
+.item-component .right .price {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.item-component .right button {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.4rem;
+  font-family: "Work Sans", serif;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 0 0.2rem;
+  border-bottom: 0.2rem solid #000000;
+  background: none;
+}

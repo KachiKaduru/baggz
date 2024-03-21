@@ -1,0 +1,91 @@
+.homepage {
+  .container {
+    display: grid;
+    gap: 2.4rem;
+  }
+
+  main {
+    background: url(/src/images/hero-1.png);
+    width: 100%;
+    height: 19.5rem;
+    display: grid;
+
+    h3 {
+      align-self: center;
+      justify-self: self-end;
+      margin: 0 1.2rem 0 0;
+      width: 24%;
+
+      span {
+        background: $white;
+        padding: 0.1rem 0.5rem;
+      }
+    }
+  }
+
+  .bags-comp-stn {
+    margin: 1.6rem 0 0;
+    padding: 0 0 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.3rem 2.4rem;
+  }
+
+  .bag-item {
+    background: $grey;
+    padding: 0.6rem 0 1.8rem;
+    position: relative;
+    display: grid;
+    cursor: pointer;
+
+    .imgs-div {
+      width: 11.1rem;
+      height: 11.1rem;
+      margin: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 1.1rem 0 1.8rem;
+    }
+
+    button {
+      background: none;
+      font-family: "Work Sans", serif;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      font-weight: 500;
+      border-bottom: 0.2rem solid $black;
+      padding: 0 0 0.3rem;
+      width: 8.5rem;
+      margin: auto;
+    }
+
+    .wishlist-btn {
+      position: absolute;
+      top: 0.6rem;
+      right: 0.9rem;
+      cursor: pointer;
+      width: 1.7rem;
+      // z-index: 10;
+      // height: 1rem;
+    }
+
+    .liked {
+      background: red;
+
+      img {
+        background: #fff;
+        mix-blend-mode: screen;
+        filter: invert(1);
+      }
+    }
+  }
+}
