@@ -1,11 +1,11 @@
-import bag1 from "../images/b-artsey.png";
-import bag2 from "../images/b-berkley.png";
-import bag3 from "../images/b-capucinus.png";
+import bag1 from "../images/b-artsey.svg";
+import bag2 from "../images/b-berkley.svg";
+import bag3 from "../images/b-capucinus.svg";
 import bag4 from "../images/b-dansboy-navyblue.png";
 import bag5 from "../images/b-dansboy-wine.png";
 import bag6 from "../images/b-louisv-blue.png";
 import bag7 from "../images/b-louisv-pink.png";
-import bag8 from "../images/b-monogram.png";
+import bag8 from "../images/b-monogram.svg";
 
 export const bagItems = [
   { id: 1, liked: false, cart: false, price: 564, name: "Artsy", img: bag1 },
@@ -25,14 +25,10 @@ export const productDetailsArr = [
     subheading: "Materials & Care",
     topHeading:
       "As in handbags, the double ring and bar design defines the wallet shape, highlighting the front flap closure which is tucked inside the hardware. Completed with an organizational interior, the black leather wallet features a detachable chain.",
-    bottomHeading: `All products are made with carefully 
-selected materials. Please handle 
-with care for longer product life.
-- Protect from direct light, heat and rain. 
-Should it become wet, dry it immediately with 
-a soft cloth
-- Store in the provided flannel bag or box
-- Clean with a soft, dry cloth`,
+    bottomHeading: `All products are made with carefully selected materials. Please handle with care for longer product life.
+    - Protect from direct light, heat and rain. Should it become wet, dry it immediately with a soft cloth
+    - Store in the provided flannel bag or box
+    - Clean with a soft, dry cloth`,
   },
   {
     id: 2,

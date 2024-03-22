@@ -1,5 +1,7 @@
 import { useState } from "react";
-import backBtn from "../images/icons/Chevron-Left.png";
+
+import backBtn from "../images/icons/Chevron-Left.svg";
+
 import { productDetailsArr } from "./ItemsComponent";
 
 const headingsArr = ["Description", "Shipping Info", "Payment Options"];
@@ -27,7 +29,7 @@ function ExitBar({ onOpen }) {
 }
 
 function DisplayProduct({ bag, onAddToCart }) {
-  // console.log(bag.cart);
+  console.log(bag);
   return (
     <section className="disp-prod">
       <div className="prod-img">

@@ -1,5 +1,6 @@
 import Header from "./HeaderComponent";
-import wishlistBtn from "../images/icons/Heart-II.png";
+import wishlistBtn from "../images/icons/icons8-heart-50.png";
+import wishlistBtnII from "../images/icons/icons8-heart-50-red.png";
 
 export default function HomePage({ bagsList, onClickedBag, onAddToWishlist }) {
   return (
@@ -44,7 +45,7 @@ function BagsComponent({ bagsList, onClickedBag, onAddToWishlist }) {
             className={`wishlist-btn heart ${bag.liked ? "liked" : ""}`}
             onClick={() => onAddToWishlist(bag)}
           >
-            <img className="heart" src={wishlistBtn} alt="like" />
+            <img className="heart" src={bag.liked ? wishlistBtnII : wishlistBtn} alt="like" />
           </div>
         </div>
       ))}

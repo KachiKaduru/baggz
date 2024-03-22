@@ -39,6 +39,24 @@
       font-family: "Work Sans", serif;
       display: grid;
       gap: 1.5rem;
+      position: relative;
+      // background-color: deeppink;
+
+      .liked-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2rem;
+        height: 2rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+
+          background-color: $white;
+          mix-blend-mode: screen;
+        }
+      }
 
       h2 {
         font-weight: 700;

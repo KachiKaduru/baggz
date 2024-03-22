@@ -73,18 +73,23 @@
       top: 0.6rem;
       right: 0.9rem;
       cursor: pointer;
-      width: 1.7rem;
-      // z-index: 10;
-      // height: 1rem;
+      width: 2rem;
+      height: 2rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
 
     .liked {
-      background: red;
+      // background: red;
+      width: 2rem;
+      height: 2rem;
 
       img {
-        background: #fff;
-        mix-blend-mode: screen;
-        filter: invert(1);
+        width: 100%;
+        height: 100%;
       }
     }
   }
