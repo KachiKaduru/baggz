@@ -4,7 +4,7 @@
   box-sizing: border-box;
   border: none;
   outline: none;
-  // transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 html {
@@ -34,7 +34,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // padding: 0 0 1.2rem;
 
   .logo {
     display: flex;

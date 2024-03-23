@@ -6,6 +6,7 @@
   box-sizing: border-box;
   border: none;
   outline: none;
+  transition: all 0.3s;
 }
 
 html {
@@ -174,6 +175,56 @@ header .user-dp {
 .homepage .bag-item .liked img {
   width: 100%;
   height: 100%;
+}
+
+.search-page-stn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  translate: 0 100%;
+}
+.search-page-stn .container {
+  background: none;
+  height: calc(100vh - 6rem);
+}
+.search-page-stn .container .input-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  box-shadow: 0 0.2rem 0.4rem black;
+  border-radius: 4rem 4rem 0 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.search-page-stn .container .input-stn {
+  display: grid;
+  gap: 1rem;
+}
+.search-page-stn .container .input-stn .img-holder {
+  justify-self: end;
+  cursor: pointer;
+}
+.search-page-stn .container .input-stn input {
+  font-family: "Work Sans", serif;
+  font-weight: 400;
+  font-size: 2.1rem;
+  border-bottom: 2px solid black;
+  padding: 1rem;
+  background: none;
+}
+.search-page-stn .container .search-results {
+  display: grid;
+  gap: 1.4rem;
+  font-family: "Work Sans", serif;
+}
+.search-page-stn .container .search-results p {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.search-page-stn .container .search-results p:hover {
+  opacity: 0.8;
 }
 
 .prod-desc .container {

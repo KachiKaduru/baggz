@@ -29,7 +29,6 @@ function ExitBar({ onOpen }) {
 }
 
 function DisplayProduct({ bag, onAddToCart }) {
-  console.log(bag);
   return (
     <section className="disp-prod">
       <div className="prod-img">

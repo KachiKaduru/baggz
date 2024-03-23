@@ -5,15 +5,12 @@ export default function WishlistAndCartComponent({
   clickedNav,
   onAddToWishlist,
   cartArr,
+  isWishOrCart,
 }) {
   const wishlistArr = bagsList.filter((bag) => bag.liked);
 
-  function addShow() {
-    if (clickedNav === "wishlist" || clickedNav === "cart") return "show";
-  }
-
   return (
-    <section className={`wc-comp-stn ${addShow()}`}>
+    <section className={`wc-comp-stn ${isWishOrCart && "show"}`}>
       <div className="container">
         {clickedNav === "wishlist" && (
           <WishlistComponent

@@ -10,10 +10,28 @@ const navBarArr = [
   { id: 4, img: cartBtn, alt: "cart" },
 ];
 
-export default function NavBar({ clickedNav, setClickedNav, cartArr }) {
+export default function NavBar({
+  clickedNav,
+  setClickedNav,
+  cartArr,
+  onShow,
+  show,
+  isWishOrCart,
+  setIsWishOrCart,
+}) {
+  function handleWishOrCart(theNav) {
+    isWishOrCart && theNav.alt === clickedNav ? setIsWishOrCart(false) : setIsWishOrCart(true);
+  }
+
   function handleNavClick(nav) {
     setClickedNav(nav.alt);
+
+    nav.id === 2 && onShow();
+    if (show && nav.id !== 2) onShow();
+
+    if (nav.id === 3 || nav.id === 4) handleWishOrCart(nav);
   }
+
   return (
     <nav className="navbar">
       <div className="container">
